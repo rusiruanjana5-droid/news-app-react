@@ -19,7 +19,20 @@ const ArticleCard = ({ item, index }) => {
       <div style={{ padding: '1.5rem', flexGrow: 1 }}>
         <h3 style={{ color: 'var(--accent)', marginBottom: '1rem' }}>{item.title.substring(0, 40)}...</h3>
         <p style={{ color: 'var(--text-sub)', marginBottom: '1.5rem' }}>{item.body.substring(0, 100)}...</p>
-        <Link to={`/detail/${item.id}`}>Read More style={{ backgroundColor: 'var(--accent)', color: 'white', padding: '0.6rem 1.2rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold' }}
+        
+        {/* මෙන්න මෙතන තමයි හැදුවේ */}
+        <Link 
+          to={`/detail/${item.id}`} 
+          style={{ 
+            backgroundColor: 'var(--accent)', 
+            color: 'white', 
+            padding: '0.6rem 1.2rem', 
+            borderRadius: '8px', 
+            textDecoration: 'none', 
+            fontWeight: 'bold',
+            display: 'inline-block'
+          }}
+        >
           Read More
         </Link>
       </div>
