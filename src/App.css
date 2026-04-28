@@ -1,0 +1,43 @@
+:root {
+  --bg-primary: #0f172a;    
+  --bg-secondary: #1f2937;  
+  --text-main: #f8fafc;     
+  --text-sub: #9ca3af;      
+  --accent: #2dd4bf;        
+  --border: #374151;        
+}
+
+[data-theme='light'] {
+  --bg-primary: #f1f5f9;    
+  --bg-secondary: #ffffff;  
+  --text-main: #000000;    
+  --text-sub: #374151;      
+  --accent: #0d9488;       
+  --border: #e2e8f0;      
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #1f2937;
+  border-top: 5px solid #2dd4bf;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 100px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@media (max-width: 600px) {
+  h2 { 
+    font-size: 1.5rem !important; 
+  }
+  
+  .container { 
+    padding: 1rem !important; 
+  }
+}
